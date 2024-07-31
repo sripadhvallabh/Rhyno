@@ -1,0 +1,145 @@
+/* Universal CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility CSS */
+
+.flex {
+    display: flex;
+}
+.col {
+    flex-direction: column;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.w-100 {
+    width: 100%;
+}
+
+/* Utility ends here */
+
+/* footer css below */
+.footer {
+    margin-top: 5%;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 10px 10px;
+}
+.copyright {
+    font-size: 10px;
+}
+
+.social-icons {
+    gap: 5px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+
+.navbar-parent {
+    /* display: flex; */
+    justify-content: space-evenly;
+    /* vertical align */
+    align-items: center; 
+    background-color: #424242;
+    /* width: 100%; */
+    height: 80px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 0 auto; /* Center the container if needed */
+}
+
+@media screen and (max-width: 5px) {
+    .navbar-parent {
+        justify-content: space-evenly;
+        align-items: center; 
+        background-color: #424242;
+        flex-direction: column;
+        height: auto;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 0 auto; 
+    }
+    .navbar-parent > div {
+        padding: 10px;
+        color:  #F9ED32;
+        justify-content: center;
+        align-items: center;
+        font-size: 8px;
+    }
+}
+.navbar-parent > div {
+    display: flex;
+    color:  #F9ED32;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    font-size: 12px;
+}
+.nav-link {
+    padding: 10px 20px;
+}
+.nav-link:hover {
+    /* text-decoration: underline; */
+    font-style: italic;
+    cursor: pointer;
+    color: #424242;
+    background-color: #F2F2F2 ;
+    font-size: 11px;
+}
+.logo-div img { 
+    max-width: 100%;
+    height: auto;
+}
+.carousel-inner{
+    font: 1em sans-serif;
+    text-align: center;
+}
+.card{
+    flex-direction: row;
+}
+.products{
+    justify-content: space-evenly;
+}
+.he{
+    text-align: center;
+}
+.bike1{
+    text-align: center;
+}
+.sri{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: start;    /* Center vertically */
+    height: 100vh;   
+}
+.bike{
+    max-width: 100%; /* Ensure the image scales responsively */
+    height: auto;
+}
+.val{
+    display: flex;
+    justify-self: start; /* Center horizontally */
+    align-items: start;    /* Center vertically */
+}
+.abc{
+    padding: 5%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: start;   
+}
+.rrr{
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly; /* Center horizontally */
+    align-items: start; 
+}
